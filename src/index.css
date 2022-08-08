@@ -1,3 +1,7 @@
+:root {
+  --background-color: linear-gradient(90deg, #662d8c, #ed1e79);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: var(--background-color);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  min-height: 100vh;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
 }
